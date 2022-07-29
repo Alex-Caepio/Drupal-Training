@@ -1,0 +1,7 @@
+name: users
+description: Provides an improved drop-down menu interface to the site Toolbar.
+package: Administration
+type: module
+core_version_requirement: ^8.8.0 || ^9 || ^10
+dependencies:
+  - drupal:toolbar
