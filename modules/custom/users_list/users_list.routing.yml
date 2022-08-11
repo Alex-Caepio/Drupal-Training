@@ -1,0 +1,7 @@
+users.list:
+  path: '/admin/config/user-interface/list'
+  defaults:
+    _controller: 'Drupal\users_list\Controller\UserController::list_of_users'
+    _title: 'List'
+  requirements:
+    _permission: 'administer site configuration'
