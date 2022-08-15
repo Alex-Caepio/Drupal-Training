@@ -1,0 +1,4 @@
+services:
+  users_list.php_spread_sheet_service:
+    class: Drupal\users_list\Service\PhpSpreadSheetService
+

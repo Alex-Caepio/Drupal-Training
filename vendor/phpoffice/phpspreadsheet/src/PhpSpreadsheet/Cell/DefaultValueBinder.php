@@ -3,19 +3,21 @@
 namespace PhpOffice\PhpSpreadsheet\Cell;
 
 use DateTimeInterface;
+use PhpOffice\PhpSpreadsheet\Exception;
 use PhpOffice\PhpSpreadsheet\RichText\RichText;
 use PhpOffice\PhpSpreadsheet\Shared\StringHelper;
 
 class DefaultValueBinder implements IValueBinder
 {
-    /**
-     * Bind value to a cell.
-     *
-     * @param Cell $cell Cell to bind value to
-     * @param mixed $value Value to bind in cell
-     *
-     * @return bool
-     */
+  /**
+   * Bind value to a cell.
+   *
+   * @param Cell $cell Cell to bind value to
+   * @param mixed $value Value to bind in cell
+   *
+   * @return bool
+   * @throws Exception
+   */
     public function bindValue(Cell $cell, $value)
     {
         // sanitize UTF-8 strings
@@ -41,11 +43,11 @@ class DefaultValueBinder implements IValueBinder
     /**
      * DataType for value.
      *
-     * @param mixed $value
+     * @param string $value
      *
      * @return string
      */
-    public static function dataTypeForValue($value)
+    public static function dataTypeForValue(string $value): string
     {
         // Match the value against a few data types
         if ($value === null) {

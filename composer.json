@@ -1,4 +1,12 @@
 {
+    "config": {
+        "platform": {
+            "php": "7.4.21"
+        },
+        "allow-plugins": {
+            "drupal/console-extend-plugin": true
+        }
+    },
     "name": "drupal/legacy-project",
     "description": "Project template for Drupal 8 projects with composer following drupal/drupal layout",
     "type": "project",
@@ -17,10 +25,12 @@
     "require": {
         "composer/installers": "^1.2",
         "drupal/admin_toolbar": "^3.1",
+        "drupal/console": "~1.0",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/core-vendor-hardening": "^8.8",
+        "drupal/phpspreadsheet": "^2.0",
         "phpoffice/phpspreadsheet": "^1.24"
     },
     "conflict": {

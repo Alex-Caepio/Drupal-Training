@@ -1,0 +1,5 @@
+make: Entering directory '/var/www/html/drupal'
+make: Leaving directory '/var/www/html/drupal'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
