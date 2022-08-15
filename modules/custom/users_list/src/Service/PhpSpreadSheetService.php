@@ -3,11 +3,8 @@
 namespace Drupal\users_list\Service;
 
 use Drupal;
-use PhpOffice\PhpSpreadsheet\Exception;
-use PhpOffice\PhpSpreadsheet\IOFactory;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xls;
-use Symfony\Component\HttpFoundation\Response;
 
 class PhpSpreadSheetService
 {
