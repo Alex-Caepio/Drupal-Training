@@ -2,7 +2,6 @@
 
 namespace Drupal\users_list\Controller;
 
-
 class UserController
 {
     protected $spreadSheetService;
